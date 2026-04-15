@@ -18,8 +18,8 @@ Module Program
         Dim strHexNum = ""
         Dim uTempVal = uNumber
         Do While (uTempVal > 0)
-            Dim nHexDigit = uTempVal Mod 16
             Dim chHexDigit = ""
+            Dim nHexDigit = uTempVal Mod 16
             If (nHexDigit >= 0 And nHexDigit <= 9) Then
                 chHexDigit = Chr(nHexDigit + Asc("0"))
             ElseIf (nHexDigit >= 10 And nHexDigit <= 15 And bLowerCase) Then
